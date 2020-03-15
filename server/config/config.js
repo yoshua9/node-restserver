@@ -37,8 +37,8 @@ if (process.env.NODE_ENV === 'dev') {
 process.env.URLDB = urlDB;
 
 
-// 'mongodb+srv://Yoshua:Camello9@cluster0-zykor.mongodb.net/cafe?retryWrites=true&w=majority'
+// =============
+// CLIENT ID
+// =============
 
-// 'mongo "mongodb+srv://cluster0-zykor.mongodb.net/cafe"  --username Yoshua'
-
-// 'mongodb+srv://Yoshua:Camello9@cluster0-zykor.mongodb.net/cafe'
+process.env.CLIENT_ID = process.env.CLIENT_ID || '626410070483-5t8j2eb6stmv9sks58lo0u32fgfdv7p2.apps.googleusercontent.com';

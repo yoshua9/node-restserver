@@ -1,7 +1,7 @@
-require('./config/config')
-const express = require('express')
-const app = express()
-const bodyParser = require('body-parser')
+require('./config/config');
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.get('/usuario', function(req, res) {
-    res.json('Get Usuario');
+    res.json('Get Usuario LOCAL!!!');
 })
 
 app.post('/usuario', function(req, res) {
